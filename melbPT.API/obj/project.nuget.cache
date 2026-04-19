@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "RLpn2kNGMHw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\agamv\\OneDrive\\Desktop\\Paper Finder\\melbPT.API\\melbPT.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\agamv\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.2\\microsoft.aspnetcore.openapi.10.0.2.nupkg.sha512",
+    "C:\\Users\\agamv\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
