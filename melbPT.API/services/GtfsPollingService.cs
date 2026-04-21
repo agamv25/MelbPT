@@ -1,5 +1,4 @@
 using Microsoft.Extensions.Caching.Memory;
-using TransitRealtime;
 namespace melbPT.API.Services
 {
     public class GtfsPollingService : BackgroundService
@@ -20,13 +19,21 @@ namespace melbPT.API.Services
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                var apiKey = _configuration.GetValue<string>("Gtfs:ApiKey");
-                var client = _httpClientFactory.CreateClient();
-                client.DefaultRequestHeaders.Add("KeyId", apiKey);
-                var response = await client.GetAsync("https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/metro/vehicle-positions", stoppingToken);
-                var bytes = await response.Content.ReadAsByteArrayAsync();
-                _cache.Set("GtfsVehiclePositions", bytes, TimeSpan.FromSeconds(30));
-                await Task.Delay(TimeSpan.FromSeconds(30), stoppingToken);
+                try
+                {
+                    var apiKey = _configuration.GetValue<string>("Gtfs:ApiKey");
+                    var client = _httpClientFactory.CreateClient();
+                    client.DefaultRequestHeaders.Add("KeyId", apiKey);
+                    var response = await client.GetAsync("https://api.opendata.transport.vic.gov.au/opendata/public-transport/gtfs/realtime/v1/metro/vehicle-positions", stoppingToken);
+                    var bytes = await response.Content.ReadAsByteArrayAsync();
+                    _cache.Set("GtfsVehiclePositions", bytes, TimeSpan.FromSeconds(30));
+                    await Task.Delay(TimeSpan.FromSeconds(30), stoppingToken);
+                    
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Error polling GTFS data");
+                }
             }
         }
     }

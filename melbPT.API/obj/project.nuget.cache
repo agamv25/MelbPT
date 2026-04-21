@@ -1,39 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "6IZ9imDPZbU=",
+  "dgSpecHash": "OUiR7+EymEI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\agamv\\OneDrive\\Desktop\\Paper Finder\\melbPT.API\\melbPT.API.csproj",
+  "projectFilePath": "C:\\Users\\agamv\\OneDrive\\Desktop\\Paper Finder\\MelbPT.API\\melbPT.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\agamv\\.nuget\\packages\\google.protobuf\\3.34.1\\google.protobuf.3.34.1.nupkg.sha512",
-    "C:\\Users\\agamv\\.nuget\\packages\\gtfsrealtimebindings\\0.0.4\\gtfsrealtimebindings.0.0.4.nupkg.sha512",
+    "C:\\Users\\agamv\\.nuget\\packages\\grpc.tools\\2.80.0\\grpc.tools.2.80.0.nupkg.sha512",
     "C:\\Users\\agamv\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.2\\microsoft.aspnetcore.openapi.10.0.2.nupkg.sha512",
-    "C:\\Users\\agamv\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
-    "C:\\Users\\agamv\\.nuget\\packages\\protobuf-net\\2.0.0.668\\protobuf-net.2.0.0.668.nupkg.sha512"
+    "C:\\Users\\agamv\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "message": "Package 'GtfsRealtimeBindings 0.0.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Users\\agamv\\OneDrive\\Desktop\\Paper Finder\\melbPT.API\\melbPT.API.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\agamv\\OneDrive\\Desktop\\Paper Finder\\melbPT.API\\melbPT.API.csproj",
-      "libraryId": "GtfsRealtimeBindings",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "message": "Package 'protobuf-net 2.0.0.668' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0'. This package may not be fully compatible with your project.",
-      "projectPath": "C:\\Users\\agamv\\OneDrive\\Desktop\\Paper Finder\\melbPT.API\\melbPT.API.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\agamv\\OneDrive\\Desktop\\Paper Finder\\melbPT.API\\melbPT.API.csproj",
-      "libraryId": "protobuf-net",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  "logs": []
 }

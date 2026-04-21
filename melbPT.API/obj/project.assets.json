@@ -15,16 +15,11 @@
           }
         }
       },
-      "GtfsRealtimeBindings/0.0.4": {
+      "Grpc.Tools/2.80.0": {
         "type": "package",
-        "dependencies": {
-          "protobuf-net": "2.0.0.668"
-        },
-        "compile": {
-          "lib/net40/GtfsRealtimeBindings.dll": {}
-        },
-        "runtime": {
-          "lib/net40/GtfsRealtimeBindings.dll": {}
+        "build": {
+          "build/Grpc.Tools.props": {},
+          "build/Grpc.Tools.targets": {}
         }
       },
       "Microsoft.AspNetCore.OpenApi/10.0.2": {
@@ -61,19 +56,6 @@
             "related": ".pdb;.xml"
           }
         }
-      },
-      "protobuf-net/2.0.0.668": {
-        "type": "package",
-        "compile": {
-          "lib/net40/protobuf-net.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net40/protobuf-net.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
       }
     }
   },
@@ -101,16 +83,53 @@
         "lib/netstandard2.0/Google.Protobuf.xml"
       ]
     },
-    "GtfsRealtimeBindings/0.0.4": {
-      "sha512": "iQ6LOuN2BjxoOO71rMfkt1eYDxNRpjk9E/0BuQ9DYU6uzvRaOwc6SmXaNyAoPlXfbco5LFJZzjekTzkdhVXZkg==",
+    "Grpc.Tools/2.80.0": {
+      "sha512": "NS1AxwVZnrdbBoMf5L5ruGjBjoLBej9avhqxWNsgfu2GU6FhpxEVJOwLJsdljlDCjvquJiAH2zf/WodIWMvf2w==",
       "type": "package",
-      "path": "gtfsrealtimebindings/0.0.4",
+      "path": "grpc.tools/2.80.0",
+      "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "gtfsrealtimebindings.0.0.4.nupkg.sha512",
-        "gtfsrealtimebindings.nuspec",
-        "lib/net40/GtfsRealtimeBindings.dll"
+        "README.md",
+        "build/Grpc.Tools.props",
+        "build/Grpc.Tools.targets",
+        "build/_grpc/Grpc.CSharp.xml",
+        "build/_grpc/_Grpc.Tools.props",
+        "build/_grpc/_Grpc.Tools.targets",
+        "build/_protobuf/Google.Protobuf.Tools.props",
+        "build/_protobuf/Google.Protobuf.Tools.targets",
+        "build/_protobuf/Protobuf.CSharp.xml",
+        "build/_protobuf/net45/Protobuf.MSBuild.dll",
+        "build/_protobuf/net45/Protobuf.MSBuild.pdb",
+        "build/_protobuf/netstandard1.3/Protobuf.MSBuild.dll",
+        "build/_protobuf/netstandard1.3/Protobuf.MSBuild.pdb",
+        "build/native/include/google/protobuf/any.proto",
+        "build/native/include/google/protobuf/api.proto",
+        "build/native/include/google/protobuf/descriptor.proto",
+        "build/native/include/google/protobuf/duration.proto",
+        "build/native/include/google/protobuf/empty.proto",
+        "build/native/include/google/protobuf/field_mask.proto",
+        "build/native/include/google/protobuf/source_context.proto",
+        "build/native/include/google/protobuf/struct.proto",
+        "build/native/include/google/protobuf/timestamp.proto",
+        "build/native/include/google/protobuf/type.proto",
+        "build/native/include/google/protobuf/wrappers.proto",
+        "grpc.tools.2.80.0.nupkg.sha512",
+        "grpc.tools.nuspec",
+        "packageIcon.png",
+        "tools/linux_arm64/grpc_csharp_plugin",
+        "tools/linux_arm64/protoc",
+        "tools/linux_x64/grpc_csharp_plugin",
+        "tools/linux_x64/protoc",
+        "tools/linux_x86/grpc_csharp_plugin",
+        "tools/linux_x86/protoc",
+        "tools/macosx_x64/grpc_csharp_plugin",
+        "tools/macosx_x64/protoc",
+        "tools/windows_x64/grpc_csharp_plugin.exe",
+        "tools/windows_x64/protoc.exe",
+        "tools/windows_x86/grpc_csharp_plugin.exe",
+        "tools/windows_x86/protoc.exe"
       ]
     },
     "Microsoft.AspNetCore.OpenApi/10.0.2": {
@@ -148,63 +167,12 @@
         "microsoft.openapi.2.0.0.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
-    },
-    "protobuf-net/2.0.0.668": {
-      "sha512": "Lgj+Kf1+RV0utKxX9u1WEcymPGrbWrj/AwFmFADFLLa/LLdc1ji2MIGcecFRAGUu6UO8BRbdjZAIYWvLlN1B/A==",
-      "type": "package",
-      "path": "protobuf-net/2.0.0.668",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net20-cf/protobuf-net.dll",
-        "lib/net20-cf/protobuf-net.pdb",
-        "lib/net20-cf/protobuf-net.xml",
-        "lib/net20/protobuf-net.dll",
-        "lib/net20/protobuf-net.pdb",
-        "lib/net20/protobuf-net.xml",
-        "lib/net30/protobuf-net.dll",
-        "lib/net30/protobuf-net.pdb",
-        "lib/net30/protobuf-net.xml",
-        "lib/net35-cf/protobuf-net.dll",
-        "lib/net35-cf/protobuf-net.pdb",
-        "lib/net35-cf/protobuf-net.xml",
-        "lib/net35/protobuf-net.dll",
-        "lib/net35/protobuf-net.pdb",
-        "lib/net35/protobuf-net.xml",
-        "lib/net40-cf/protobuf-net.dll",
-        "lib/net40-cf/protobuf-net.pdb",
-        "lib/net40-cf/protobuf-net.xml",
-        "lib/net40/protobuf-net.dll",
-        "lib/net40/protobuf-net.pdb",
-        "lib/net40/protobuf-net.xml",
-        "lib/netcore45/protobuf-net.XML",
-        "lib/netcore45/protobuf-net.dll",
-        "lib/netcore45/protobuf-net.pdb",
-        "lib/netcore45/protobuf-net.pri",
-        "lib/portable-sl4+net40+wp7+windows8/protobuf-net.dll",
-        "lib/portable-sl4+net40+wp7+windows8/protobuf-net.pdb",
-        "lib/portable-sl4+net40+wp7+windows8/protobuf-net.xml",
-        "lib/sl3-wp/protobuf-net.dll",
-        "lib/sl3-wp/protobuf-net.pdb",
-        "lib/sl3-wp/protobuf-net.xml",
-        "lib/sl4-windowsphone71/protobuf-net.dll",
-        "lib/sl4-windowsphone71/protobuf-net.pdb",
-        "lib/sl4-windowsphone71/protobuf-net.xml",
-        "lib/sl4/protobuf-net.dll",
-        "lib/sl4/protobuf-net.pdb",
-        "lib/sl4/protobuf-net.xml",
-        "lib/windowsphone8/protobuf-net.dll",
-        "lib/windowsphone8/protobuf-net.pdb",
-        "lib/windowsphone8/protobuf-net.xml",
-        "protobuf-net.2.0.0.668.nupkg.sha512",
-        "protobuf-net.nuspec"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
       "Google.Protobuf >= 3.34.1",
-      "GtfsRealtimeBindings >= 0.0.4",
+      "Grpc.Tools >= 2.80.0",
       "Microsoft.AspNetCore.OpenApi >= 10.0.2"
     ]
   },
@@ -215,11 +183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\agamv\\OneDrive\\Desktop\\Paper Finder\\melbPT.API\\melbPT.API.csproj",
+      "projectUniqueName": "C:\\Users\\agamv\\OneDrive\\Desktop\\Paper Finder\\MelbPT.API\\melbPT.API.csproj",
       "projectName": "melbPT.API",
-      "projectPath": "C:\\Users\\agamv\\OneDrive\\Desktop\\Paper Finder\\melbPT.API\\melbPT.API.csproj",
+      "projectPath": "C:\\Users\\agamv\\OneDrive\\Desktop\\Paper Finder\\MelbPT.API\\melbPT.API.csproj",
       "packagesPath": "C:\\Users\\agamv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\agamv\\OneDrive\\Desktop\\Paper Finder\\melbPT.API\\obj\\",
+      "outputPath": "C:\\Users\\agamv\\OneDrive\\Desktop\\Paper Finder\\MelbPT.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -263,9 +231,11 @@
             "target": "Package",
             "version": "[3.34.1, )"
           },
-          "GtfsRealtimeBindings": {
+          "Grpc.Tools": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
-            "version": "[0.0.4, )"
+            "version": "[2.80.0, )"
           },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
@@ -708,27 +678,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'GtfsRealtimeBindings 0.0.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0'. This package may not be fully compatible with your project.",
-      "libraryId": "GtfsRealtimeBindings",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'protobuf-net 2.0.0.668' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0'. This package may not be fully compatible with your project.",
-      "libraryId": "protobuf-net",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  }
 }

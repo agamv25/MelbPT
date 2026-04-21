@@ -32,3 +32,4 @@ C:\Users\agamv\OneDrive\Desktop\Paper Finder\melbPT.API\obj\Debug\net10.0\melbPT
 C:\Users\agamv\OneDrive\Desktop\Paper Finder\melbPT.API\obj\Debug\net10.0\melbPT.API.genruntimeconfig.cache
 C:\Users\agamv\OneDrive\Desktop\Paper Finder\melbPT.API\obj\Debug\net10.0\ref\melbPT.API.dll
 C:\Users\agamv\OneDrive\Desktop\Paper Finder\MelbPT.API\obj\Debug\net10.0\melbPT.API.sourcelink.json
+C:\Users\agamv\OneDrive\Desktop\Paper Finder\MelbPT.API\bin\Debug\net10.0\Google.Protobuf.dll

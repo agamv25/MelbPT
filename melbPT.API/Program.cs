@@ -6,8 +6,11 @@ builder.Services.AddOpenApi();
 builder.Services.AddHostedService<GtfsPollingService>();
 builder.Services.AddMemoryCache();
 builder.Services.AddHttpClient();
+builder.Services.AddControllers();
 
 var app = builder.Build();
+
+app.MapControllers();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

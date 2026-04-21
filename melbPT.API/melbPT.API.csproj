@@ -9,8 +9,12 @@
 
   <ItemGroup>
     <PackageReference Include="Google.Protobuf" Version="3.34.1" />
-    <PackageReference Include="GtfsRealtimeBindings" Version="0.0.4" />
+    <PackageReference Include="Grpc.Tools" Version="2.80.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.2" />
+    <Protobuf Include="protos/gtfs-realtime.proto" GrpcServices="None" />
   </ItemGroup>
 
 </Project>
