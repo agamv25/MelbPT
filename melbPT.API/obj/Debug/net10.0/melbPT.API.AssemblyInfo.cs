@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("melbPT.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91314dd615c85c96bf6db9c23487a3b249c0327e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bdc8d7ac61ee5e10898d5788aa91c6b1d6cff6e")]
 [assembly: System.Reflection.AssemblyProductAttribute("melbPT.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("melbPT.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
