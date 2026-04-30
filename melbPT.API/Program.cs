@@ -9,6 +9,7 @@ builder.Services.AddHostedService<GtfsPollingService>();
 builder.Services.AddMemoryCache();
 builder.Services.AddHttpClient();
 builder.Services.AddControllers();
+builder.Services.AddHostedService<GtfsShapeService>();
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(
