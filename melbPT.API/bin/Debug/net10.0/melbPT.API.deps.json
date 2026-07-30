@@ -9,7 +9,8 @@
       "melbPT.API/1.0.0": {
         "dependencies": {
           "Google.Protobuf": "3.34.1",
-          "Microsoft.AspNetCore.OpenApi": "10.0.2"
+          "Microsoft.AspNetCore.OpenApi": "10.0.2",
+          "Scalar.AspNetCore": "2.16.16"
         },
         "runtime": {
           "melbPT.API.dll": {}
@@ -41,6 +42,14 @@
             "fileVersion": "2.0.0.0"
           }
         }
+      },
+      "Scalar.AspNetCore/2.16.16": {
+        "runtime": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "assemblyVersion": "2.16.16.0",
+            "fileVersion": "2.16.16.0"
+          }
+        }
       }
     }
   },
@@ -70,6 +79,13 @@
       "sha512": "sha512-GGYLfzV/G/ct80OZ45JxnWP7NvMX1BCugn/lX7TH5o0lcVaviavsLMTxmFV2AybXWjbi3h6FF1vgZiTK6PXndw==",
       "path": "microsoft.openapi/2.0.0",
       "hashPath": "microsoft.openapi.2.0.0.nupkg.sha512"
+    },
+    "Scalar.AspNetCore/2.16.16": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ax0e0bIh+Upf92k1+pTBUom3e/kbpu20qsrDYmmS1NM721Eq2xF8c789x6IbiNrvW8WwySRzPv/icYYhb6idSg==",
+      "path": "scalar.aspnetcore/2.16.16",
+      "hashPath": "scalar.aspnetcore.2.16.16.nupkg.sha512"
     }
   }
 }

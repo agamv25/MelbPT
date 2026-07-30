@@ -14,6 +14,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.2" />
+    <PackageReference Include="Scalar.AspNetCore" Version="2.16.16" />
     <Protobuf Include="protos/gtfs-realtime.proto" GrpcServices="None" />
   </ItemGroup>
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\agamv\\OneDrive\\Desktop\\Paper Finder\\melbPT.API\\melbPT.API.csproj": {}
+    "C:\\Users\\agamv\\OneDrive\\Desktop\\MelbPT\\melbPT.API\\melbPT.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\agamv\\OneDrive\\Desktop\\Paper Finder\\melbPT.API\\melbPT.API.csproj": {
+    "C:\\Users\\agamv\\OneDrive\\Desktop\\MelbPT\\melbPT.API\\melbPT.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\agamv\\OneDrive\\Desktop\\Paper Finder\\melbPT.API\\melbPT.API.csproj",
+        "projectUniqueName": "C:\\Users\\agamv\\OneDrive\\Desktop\\MelbPT\\melbPT.API\\melbPT.API.csproj",
         "projectName": "melbPT.API",
-        "projectPath": "C:\\Users\\agamv\\OneDrive\\Desktop\\Paper Finder\\melbPT.API\\melbPT.API.csproj",
+        "projectPath": "C:\\Users\\agamv\\OneDrive\\Desktop\\MelbPT\\melbPT.API\\melbPT.API.csproj",
         "packagesPath": "C:\\Users\\agamv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\agamv\\OneDrive\\Desktop\\Paper Finder\\melbPT.API\\obj\\",
+        "outputPath": "C:\\Users\\agamv\\OneDrive\\Desktop\\MelbPT\\melbPT.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,6 +64,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[10.0.2, )"
+            },
+            "Scalar.AspNetCore": {
+              "target": "Package",
+              "version": "[2.16.16, )"
             }
           },
           "imports": [

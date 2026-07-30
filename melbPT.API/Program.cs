@@ -1,4 +1,5 @@
 using melbPT.API.Services;
+using Scalar.AspNetCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -30,8 +31,8 @@ app.MapControllers();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    app.MapScalarApiReference();   // add this line
 }
-
 app.UseHttpsRedirection();
 
 app.Run();
