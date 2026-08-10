@@ -18,10 +18,10 @@ namespace melbPT.API.Controller
             _cache = cache;
         }
 
-        [HttpGet]
-        public IActionResult Get()
+        [HttpGet("{mode}")]
+        public IActionResult Get(string mode)
         {
-            if (_cache.TryGetValue("GtfsVehiclePositions", out byte[] bytes))
+            if (_cache.TryGetValue($"GtfsVehiclePositions:{mode}", out byte[] bytes))
             {
                 var feed = FeedMessage.Parser.ParseFrom(bytes);
                 return Ok(feed);
