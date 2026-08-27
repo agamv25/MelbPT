@@ -38,6 +38,24 @@ namespace melbPT.API.Services
                     using var reader = new StreamReader(entryStream);
                     var content = await reader.ReadToEndAsync(stoppingToken);
                     _cache.Set("GtfsShapes", content, TimeSpan.FromHours(1));
+                    var lines = content.Split('\n').Skip(1);
+                    var shapePoints = lines.Select(line =>
+                    {
+                        var columns = line.Split(',');
+                        var shapeId = columns[0].Trim('"');
+                        var latitude = double.Parse(columns[1].Trim('"'));
+                        var longitude = double.Parse(columns[2].Trim('"'));  
+                        var sequence = int.Parse(columns[3].Trim('"')); 
+                        return (ShapeId: shapeId, Latitude: latitude, Longitude: longitude, Sequence: sequence);
+                    }).ToList();
+                    var features = shapePoints
+                        .GroupBy(p => p.ShapeId)
+                        .Select(group => new
+                        {
+
+                            ShapeId = group.Key,
+                            Points = group.Select(p => new { p.Latitude, p.Longitude }).ToList()
+                        });
                 }
             }
             catch (Exception ex)

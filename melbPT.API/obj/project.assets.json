@@ -219,11 +219,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\agamv\\OneDrive\\Desktop\\MelbPT\\melbpt.api\\melbPT.API.csproj",
+      "projectUniqueName": "C:\\Users\\agamv\\OneDrive\\Desktop\\MelbPT\\melbPT.API\\melbPT.API.csproj",
       "projectName": "melbPT.API",
-      "projectPath": "C:\\Users\\agamv\\OneDrive\\Desktop\\MelbPT\\melbpt.api\\melbPT.API.csproj",
+      "projectPath": "C:\\Users\\agamv\\OneDrive\\Desktop\\MelbPT\\melbPT.API\\melbPT.API.csproj",
       "packagesPath": "C:\\Users\\agamv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\agamv\\OneDrive\\Desktop\\MelbPT\\melbpt.api\\obj\\",
+      "outputPath": "C:\\Users\\agamv\\OneDrive\\Desktop\\MelbPT\\melbPT.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

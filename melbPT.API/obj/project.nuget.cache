@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nBnSZI7Q8Oo=",
+  "dgSpecHash": "PCfYG+panhw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\agamv\\OneDrive\\Desktop\\MelbPT\\melbpt.api\\melbPT.API.csproj",
+  "projectFilePath": "C:\\Users\\agamv\\OneDrive\\Desktop\\MelbPT\\melbPT.API\\melbPT.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\agamv\\.nuget\\packages\\google.protobuf\\3.34.1\\google.protobuf.3.34.1.nupkg.sha512",
     "C:\\Users\\agamv\\.nuget\\packages\\grpc.tools\\2.80.0\\grpc.tools.2.80.0.nupkg.sha512",
@@ -15,9 +15,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
-      "projectPath": "C:\\Users\\agamv\\OneDrive\\Desktop\\MelbPT\\melbpt.api\\melbPT.API.csproj",
+      "projectPath": "C:\\Users\\agamv\\OneDrive\\Desktop\\MelbPT\\melbPT.API\\melbPT.API.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\agamv\\OneDrive\\Desktop\\MelbPT\\melbpt.api\\melbPT.API.csproj",
+      "filePath": "C:\\Users\\agamv\\OneDrive\\Desktop\\MelbPT\\melbPT.API\\melbPT.API.csproj",
       "libraryId": "Microsoft.OpenApi",
       "targetGraphs": [
         "net10.0"
