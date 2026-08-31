@@ -20,9 +20,9 @@ namespace melbPT.API.Controller
         [HttpGet]
         public IActionResult Get()
         {
-            if (_cache.TryGetValue("GtfsShapes", out string shapes))
+            if (_cache.TryGetValue("GtfsShapesGeoJson", out object shapesGeoJson))
             {
-                return Ok(shapes);
+                return Ok(shapesGeoJson);
             }
             else
             {

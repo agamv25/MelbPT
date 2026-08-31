@@ -38,24 +38,41 @@ namespace melbPT.API.Services
                     using var reader = new StreamReader(entryStream);
                     var content = await reader.ReadToEndAsync(stoppingToken);
                     _cache.Set("GtfsShapes", content, TimeSpan.FromHours(1));
-                    var lines = content.Split('\n').Skip(1);
+                    var lines = content.Split('\n').Skip(1).Where(line => !string.IsNullOrWhiteSpace(line)).ToList();
                     var shapePoints = lines.Select(line =>
                     {
                         var columns = line.Split(',');
                         var shapeId = columns[0].Trim('"');
                         var latitude = double.Parse(columns[1].Trim('"'));
-                        var longitude = double.Parse(columns[2].Trim('"'));  
-                        var sequence = int.Parse(columns[3].Trim('"')); 
+                        var longitude = double.Parse(columns[2].Trim('"'));
+                        var sequence = int.Parse(columns[3].Trim('"'));
                         return (ShapeId: shapeId, Latitude: latitude, Longitude: longitude, Sequence: sequence);
                     }).ToList();
                     var features = shapePoints
                         .GroupBy(p => p.ShapeId)
                         .Select(group => new
                         {
+                            type = "Feature",
+                            geometry = new
+                            {
+                                type = "LineString",
+                                coordinates = group.OrderBy(p => p.Sequence)
+                                                   .Select(p => new[] { p.Longitude, p.Latitude })
+                                                   .ToArray()
+                            },
 
-                            ShapeId = group.Key,
-                            Points = group.Select(p => new { p.Latitude, p.Longitude }).ToList()
-                        });
+                            properties = new
+                            {
+                                shape_id = group.Key
+                            }
+                        }).ToList();
+                        
+                    var featureCollection = new
+                    {
+                        type = "FeatureCollection",
+                        features = features
+                    };
+                    _cache.Set("GtfsShapesGeoJson", featureCollection, TimeSpan.FromHours(1));
                 }
             }
             catch (Exception ex)
