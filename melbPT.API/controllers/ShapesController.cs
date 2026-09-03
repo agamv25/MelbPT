@@ -29,5 +29,29 @@ namespace melbPT.API.Controller
                 return NotFound();
             }
         }
+        [HttpGet("trips")]
+        public IActionResult GetTrips()
+        {
+            if (_cache.TryGetValue("GtfsTrips", out object trips))
+            {
+                return Ok(trips);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+        [HttpGet("routes")]
+        public IActionResult GetRoutes()
+        {
+            if (_cache.TryGetValue("GtfsRoutes", out object routes))
+            {
+                return Ok(routes);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
     }
 }
