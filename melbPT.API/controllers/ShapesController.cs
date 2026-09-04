@@ -17,10 +17,10 @@ namespace melbPT.API.Controller
             _cache = cache;
         }
 
-        [HttpGet]
-        public IActionResult Get()
+        [HttpGet("{mode}")]
+        public IActionResult Get(string mode)
         {
-            if (_cache.TryGetValue("GtfsShapesGeoJson", out object shapesGeoJson))
+            if (_cache.TryGetValue($"GtfsShapesGeoJson:{mode}", out object shapesGeoJson))
             {
                 return Ok(shapesGeoJson);
             }
@@ -29,24 +29,12 @@ namespace melbPT.API.Controller
                 return NotFound();
             }
         }
-        [HttpGet("trips")]
-        public IActionResult GetTrips()
+        [HttpGet("Stops/{mode}")]
+        public IActionResult GetStops(string mode)
         {
-            if (_cache.TryGetValue("GtfsTrips", out object trips))
+            if(_cache.TryGetValue($"GtfsStopsGeoJson:{mode}", out object stopsGeoJson))
             {
-                return Ok(trips);
-            }
-            else
-            {
-                return NotFound();
-            }
-        }
-        [HttpGet("routes")]
-        public IActionResult GetRoutes()
-        {
-            if (_cache.TryGetValue("GtfsRoutes", out object routes))
-            {
-                return Ok(routes);
+                return Ok(stopsGeoJson);
             }
             else
             {
